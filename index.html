@@ -4,9 +4,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>47都道府県ガイド</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <h1>47都道府県おすすめガイド</h1>
-  <p>GitHub Pagesの公開テストです。</p>
+  <div class="page-wrapper">
+
+    <!-- ロゴ仮画像 -->
+    <div class="logo-area" role="img" aria-label="サイトロゴ（仮）">
+      <span>ロゴ<br>画像</span>
+    </div>
+
+    <!-- 日本地図＋地方選択ボタン -->
+    <div class="map-container">
+      <img
+        src="./images/日本地図_メインページ画像.png"
+        alt="日本地図 — 地方を選んでください"
+        class="map-image"
+      >
+
+      <a href="./test.html" class="region-btn btn-hokkaido-tohoku" aria-label="北海道・東北地方を選ぶ">北海道・東北</a>
+      <a href="./test.html" class="region-btn btn-kanto"           aria-label="関東地方を選ぶ">関東</a>
+      <a href="./test.html" class="region-btn btn-chubu"           aria-label="中部地方を選ぶ">中部</a>
+      <a href="./test.html" class="region-btn btn-kinki"           aria-label="近畿地方を選ぶ">近畿</a>
+      <a href="./test.html" class="region-btn btn-chugoku-shikoku" aria-label="中国・四国地方を選ぶ">中国・四国</a>
+      <a href="./test.html" class="region-btn btn-kyushu"          aria-label="九州地方を選ぶ">九州</a>
+    </div>
+
+  </div>
 </body>
 </html>
