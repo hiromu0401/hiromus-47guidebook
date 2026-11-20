@@ -160,39 +160,45 @@ body {
 
 /* 北海道 */
 .btn-hokkaido {
-  top: 15%;
+  top: 25%;
+  left: 50%;
 }
 
 /* 青森県 */
 .btn-aomori {
-  top: 26%;
+  top: 45%;
+  left: 50%;
 }
 
 /* 秋田県 */
 .btn-akita {
-  top: 37%;
+  top: 60%;
+  left: 35%;
 }
 
 /* 岩手県 */
 .btn-iwate {
-  top: 48%;
+  top: 60%;
+  left: 62%;
 }
 
 /* 宮城県 */
 .btn-miyagi {
-  top: 59%;
+  top: 75%;
+  left: 62%;
 }
 
 /* 福島県 */
 .btn-fukushima {
-  top: 70%;
+  top: 90%;
+  left: 50%;
 }
 
 /* 山形県 */
 .btn-yamagata {
-  top: 81%;
+  top: 75%;
+  left: 35%;
 }
-
 
 /* ========================================
    スマートフォン対応
