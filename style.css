@@ -78,33 +78,33 @@ body {
 
 /* 各ボタンの位置 */
 .btn-hokkaido-tohoku {
-  top: 35%;
-  left: 78%;
+  top: 40%;
+  left: 83%;
 }
 
 .btn-kanto {
-  top: 68%;
-  left: 85%;
+  top: 75%;
+  left: 83%;
 }
 
 .btn-chubu {
-  top: 60%;
-  left: 58%;
+  top: 70%;
+  left: 65%;
 }
 
 .btn-kinki {
-  top: 74%;
-  left: 43%;
+  top: 80%;
+  left: 45%;
 }
 
 .btn-chugoku-shikoku {
-  top: 64%;
-  left: 26%;
+  top: 70%;
+  left: 28%;
 }
 
 .btn-kyushu {
-  top: 76%;
-  left: 10%;
+  top: 80%;
+  left: 12%;
 }
 
 /* レスポンシブ：小さい画面 */
