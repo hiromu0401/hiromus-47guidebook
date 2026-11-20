@@ -1,3 +1,7 @@
+/* ========================================
+   共通設定
+======================================== */
+
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -13,6 +17,11 @@ body {
   min-height: 100vh;
   overflow-x: hidden;
 }
+
+
+/* ========================================
+   ページ全体のレイアウト
+======================================== */
 
 .page-wrapper {
   width: 100%;
@@ -31,7 +40,11 @@ body {
   padding: 16px;
 }
 
-/* 地図＋ボタンのコンテナ */
+
+/* ========================================
+   地図画像
+======================================== */
+
 .map-container {
   position: relative;
   width: 100%;
@@ -44,43 +57,59 @@ body {
   display: block;
 }
 
-/* 地方ボタン共通 */
+
+/* ========================================
+   ボタン共通設定
+======================================== */
+
 .region-btn {
   position: absolute;
+
   background-color: #ffffff;
   color: #A52035;
   border: 1.5px solid #A52035;
   border-radius: 20px;
 
+  /* 地図の幅に応じてサイズを調整 */
   font-size: clamp(7px, 2.5cqw, 13px);
   min-height: 0;
   padding: 1cqw 1.5cqw;
 
   font-weight: 700;
   white-space: nowrap;
+
   display: flex;
   align-items: center;
   justify-content: center;
 
+  /* 指定座標がボタンの中心になる */
   transform: translate(-50%, -50%);
+
   cursor: pointer;
   text-decoration: none;
+
   transition: background-color 0.15s, color 0.15s;
   line-height: 1.2;
 }
 
+/* マウスを重ねたとき */
 .region-btn:hover,
-.region-btn:focus {
+.region-btn:focus-visible {
   background-color: #A52035;
   color: #ffffff;
-  outline: none;
 }
 
+/* 押したとき */
 .region-btn:active {
   opacity: 0.85;
 }
 
-/* 各ボタンの位置 */
+
+/* ========================================
+   index.html
+   地方ボタンの位置
+======================================== */
+
 .btn-hokkaido-tohoku {
   top: 40%;
   left: 83%;
@@ -111,14 +140,73 @@ body {
   left: 12%;
 }
 
-/* レスポンシブ：小さい画面 */
+
+/* ========================================
+   hokkaido_tohoku.html
+   各都道県ボタンの位置
+======================================== */
+
+/* 北海道 */
+.btn-hokkaido {
+  top: 25%;
+　left: 50%;
+}
+
+/* 青森県 */
+.btn-aomori {
+  top: 45%;
+  left: 50%;
+}
+
+/* 秋田県 */
+.btn-akita {
+  top: 57%;
+  left: 38%;
+}
+
+/* 岩手県 */
+.btn-iwate {
+  top: 57%;
+  left: 62%;
+}
+
+/* 宮城県 */
+.btn-miyagi {
+  top: 78%;
+  left: 62%;
+}
+
+/* 福島県 */
+.btn-fukushima {
+  top: 86%;
+  left: 55%;
+}
+
+/* 山形県 */
+.btn-yamagata {
+  top: 78%;
+  left: 38%;
+}
+
+
+/* ========================================
+   スマートフォン対応
+======================================== */
+
 @media (max-width: 360px) {
+
   .content-box {
     padding: 10px;
   }
+
 }
 
-/* ===== test.html用スタイル ===== */
+
+/* ========================================
+   test.html
+   整備中ページ
+======================================== */
+
 .under-construction {
   display: flex;
   flex-direction: column;
@@ -140,20 +228,23 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+
   background-color: #ffffff;
   color: #A52035;
   border: 2px solid #A52035;
   border-radius: 24px;
+
   font-size: 16px;
   font-weight: 700;
+
   padding: 12px 32px;
+
   text-decoration: none;
   transition: background-color 0.15s, color 0.15s;
 }
 
 .back-btn:hover,
-.back-btn:focus {
+.back-btn:focus-visible {
   background-color: #A52035;
   color: #ffffff;
-  outline: none;
 }
