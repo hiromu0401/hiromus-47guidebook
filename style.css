@@ -67,13 +67,15 @@ body {
 
   background-color: #ffffff;
   color: #A52035;
-  border: 1.5px solid #A52035;
-  border-radius: 20px;
 
-  /* 地図の幅に応じてサイズを調整 */
-  font-size: clamp(7px, 2.5cqw, 13px);
+  /* 枠線 */
+  border: 3px solid #A52035;
+  border-radius: 40px;
+
+  /* ボタンサイズを2倍 */
+  font-size: clamp(14px, 5cqw, 26px);
   min-height: 0;
-  padding: 1cqw 1.5cqw;
+  padding: 2cqw 3cqw;
 
   font-weight: 700;
   white-space: nowrap;
@@ -143,49 +145,52 @@ body {
 
 /* ========================================
    hokkaido_tohoku.html
+   都道県ボタン共通設定
+======================================== */
+
+.prefecture-btn {
+  left: 15%;
+}
+
+
+/* ========================================
+   北海道・東北
    各都道県ボタンの位置
 ======================================== */
 
 /* 北海道 */
 .btn-hokkaido {
-  top: 25%;
-　left: 50%;
+  top: 15%;
 }
 
 /* 青森県 */
 .btn-aomori {
-  top: 45%;
-  left: 50%;
+  top: 26%;
 }
 
 /* 秋田県 */
 .btn-akita {
-  top: 57%;
-  left: 38%;
+  top: 37%;
 }
 
 /* 岩手県 */
 .btn-iwate {
-  top: 57%;
-  left: 62%;
+  top: 48%;
 }
 
 /* 宮城県 */
 .btn-miyagi {
-  top: 78%;
-  left: 62%;
+  top: 59%;
 }
 
 /* 福島県 */
 .btn-fukushima {
-  top: 86%;
-  left: 55%;
+  top: 70%;
 }
 
 /* 山形県 */
 .btn-yamagata {
-  top: 78%;
-  left: 38%;
+  top: 81%;
 }
 
 
