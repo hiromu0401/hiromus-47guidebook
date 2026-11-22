@@ -195,12 +195,16 @@ body {
 
 /* ========================================
    自然タイプアイコン
+   北海道.pngを基準に配置
 ======================================== */
 .spot-type-icon {
   position: absolute;
-  top: 20px;
-  left: 10px;
-  width: 60px;
+  /* 北海道.pngの上端から330px上 */
+  top: -65px;
+  /* 北海道.pngの右端に揃える */
+  right: 0;
+  /* アイコンの大きさ */
+  width: 50px;
   height: auto;
   z-index: 3;
   pointer-events: none;
