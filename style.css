@@ -252,6 +252,17 @@ body {
   text-align: center;
 }
 
+/* 観光スポットのキャッチコピー */
+.spot-catchcopy {
+  font-family: 'Zen Maru Gothic', sans-serif;
+  font-size: clamp(16px, 4.5vw, 24px);
+  font-weight: 700;
+  color: #A52035;
+  line-height: 1.5;
+  text-align: left;
+  margin-bottom: 12px;
+}
+
 /* 観光スポット説明 */
 .spot-description {
   padding: 12px 0;
