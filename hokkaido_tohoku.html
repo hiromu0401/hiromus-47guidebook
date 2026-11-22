@@ -6,12 +6,9 @@
   <title>北海道・東北 | 47都道府県ガイド</title>
   <link rel="stylesheet" href="./style.css">
 </head>
-<body>
+<body class="page-tohoku">
   <div class="page-wrapper">
-
-    <!-- 白いコンテンツボックス -->
     <div class="content-box">
-
       <!-- 北海道・東北地図＋都道県選択ボタン -->
       <div class="map-container">
         <img
@@ -19,8 +16,7 @@
           alt="北海道・東北地方の地図 — 都道県を選んでください"
           class="map-image"
         >
-
-        <a href="./test.html" class="region-btn prefecture-btn btn-hokkaido">北海道</a>
+        <a href="./hokkaido.html" class="region-btn prefecture-btn btn-hokkaido" data-fade-link>北海道</a>
         <a href="./test.html" class="region-btn prefecture-btn btn-aomori">青森</a>
         <a href="./test.html" class="region-btn prefecture-btn btn-akita">秋田</a>
         <a href="./test.html" class="region-btn prefecture-btn btn-iwate">岩手</a>
@@ -28,14 +24,13 @@
         <a href="./test.html" class="region-btn prefecture-btn btn-fukushima">福島</a>
         <a href="./test.html" class="region-btn prefecture-btn btn-yamagata">山形</a>
       </div>
-
+      <!-- メインページに戻る -->
+      <div class="page-back-area">
+        <a href="./index.html" class="back-btn" data-fade-link>メインページに戻る</a>
+      </div>
     </div>
   </div>
-  <!-- GSAPライブラリ -->
   <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
-  <!-- 自作JavaScript -->
   <script src="./script.js"></script>
-</body>
-</html>
 </body>
 </html>
