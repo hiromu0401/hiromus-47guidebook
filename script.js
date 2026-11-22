@@ -135,22 +135,15 @@ document.addEventListener("DOMContentLoaded", () => {
       mainMap,
 
       {
-        scale: 3,
-
+        scale: 1.3,
         transformOrigin: "80% 35%",
-
         xPercent: -30,
-
         yPercent: 15,
-
         duration: 1.2,
-
         ease: "power2.inOut"
       },
-
       0
     );
-
 
     /* ========================================
        STEP 3
@@ -164,7 +157,7 @@ document.addEventListener("DOMContentLoaded", () => {
       {
         opacity: 0,
 
-        duration: 0.4,
+        duration: 0.2,
 
         ease: "power1.inOut"
       },
