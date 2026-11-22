@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       {
         opacity: 1,
-        duration: 0.4,
+        duration: 0.2,
         ease: "power1.out"
       }
     );
