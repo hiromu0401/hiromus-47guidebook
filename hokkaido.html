@@ -16,27 +16,24 @@
       <div class="prefecture-logo">
         <img src="./images/北海道ロゴ.png" alt="北海道のロゴ">
       </div>
+
       <!-- 観光スポット名 -->
       <h1 class="spot-title">知床</h1>
+
       <!-- 観光スポット画像＋キャラクター -->
-<div class="spot-image">
-  <!-- 観光スポット画像 -->
-  <img
-    src="./images/北海道.png"
-    alt="北海道・知床の風景"
-    class="spot-photo"
-  >
-  <!-- キャラクターイラスト -->
-  <img
-    src="./images/フライトキャップむう.png"
-    alt="むう"
-    class="spot-character"
-  >
-</div>
-      <!-- 住所 -->
-      <div class="spot-address">
-        <p>北海道斜里郡斜里町ウトロ西187-8</p>
+      <div class="spot-image">
+        <img
+          src="./images/北海道.png"
+          alt="北海道・知床の風景"
+          class="spot-photo"
+        >
+        <img
+          src="./images/フライトキャップむう.png"
+          alt="むう"
+          class="spot-character"
+        >
       </div>
+
       <!-- 観光スポット説明 -->
       <div class="spot-description">
         <p>
@@ -45,13 +42,36 @@
           知床は流氷が育む豊かな海洋生態系と原始性の高い陸息生態系の相互関係が評価され、2005年に世界自然遺産に登録されている。しかし近年は、地球温暖化の影響によって流氷が減少傾向にあり、豊かな生態系を取り巻く環境も変化しつつある。雄大な自然が織りなす知床ならではの絶景に興味があるならば、ぜひ早いうちに。
         </p>
       </div>
+
+      <!-- 住所 -->
+      <div class="spot-address">
+        <p>北海道斜里郡斜里町ウトロ西187-8</p>
+      </div>
+
+      <!-- Googleマップ -->
+      <div class="spot-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d179.16933365332181!2d144.99043305807103!3d44.06871027636012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sja!2sjp!4v1795354342161!5m2!1sja!2sjp"
+          width="600"
+          height="450"
+          style="border:0;"
+          allowfullscreen
+          loading="lazy"
+          referrerpolicy="strict-origin-when-cross-origin"
+          title="北海道斜里町ウトロ西186番地8の地図"
+        ></iframe>
+      </div>
+
       <!-- 北海道・東北ページに戻る -->
       <div class="page-back-area">
         <a href="./hokkaido_tohoku.html" class="back-btn" data-fade-link>北海道・東北ページに戻る</a>
       </div>
     </main>
   </div>
+
+  <!-- GSAPライブラリ -->
   <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+  <!-- 自作JavaScript -->
   <script src="./script.js"></script>
 </body>
 </html>
