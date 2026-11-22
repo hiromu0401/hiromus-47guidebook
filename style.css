@@ -10,11 +10,19 @@
 
 body {
   background-color: #A52035;
-  font-family: 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'Noto Sans JP', sans-serif;
+
+  font-family:
+    'Hiragino Kaku Gothic ProN',
+    'Hiragino Sans',
+    'Noto Sans JP',
+    sans-serif;
+
   display: flex;
   flex-direction: column;
   align-items: center;
+
   min-height: 100vh;
+
   overflow-x: hidden;
 }
 
@@ -26,17 +34,29 @@ body {
 .page-wrapper {
   width: 100%;
   max-width: 600px;
+
   padding: 32px 16px 40px;
+
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  /* ページ遷移アニメーション用 */
+  opacity: 1;
 }
 
-/* 白いコンテンツボックス */
+
+/* ========================================
+   白いコンテンツボックス
+======================================== */
+
 .content-box {
   width: 100%;
+
   background-color: #ffffff;
+
   border-radius: 8px;
+
   padding: 16px;
 }
 
@@ -47,19 +67,30 @@ body {
 
 .map-container {
   position: relative;
+
   width: 100%;
+
   container-type: inline-size;
+
+  /* ズームしても白枠からはみ出さない */
+  overflow: hidden;
 }
 
 .map-image {
+  display: block;
+
   width: 100%;
   height: auto;
-  display: block;
+
+  /* 拡大時の描画を滑らかにする */
+  transform: translateZ(0);
+
+  backface-visibility: hidden;
 }
 
 
 /* ========================================
-   ボタン共通設定
+   地方・都道県ボタン共通
 ======================================== */
 
 .region-btn {
@@ -68,16 +99,18 @@ body {
   background-color: #ffffff;
   color: #A52035;
 
-  /* 枠線 */
   border: 3px solid #A52035;
   border-radius: 40px;
 
-  /* ボタンサイズを2倍 */
+  /* ボタンサイズ */
   font-size: clamp(14px, 5cqw, 26px);
+
   min-height: 0;
+
   padding: 2cqw 3cqw;
 
   font-weight: 700;
+
   white-space: nowrap;
 
   display: flex;
@@ -88,20 +121,30 @@ body {
   transform: translate(-50%, -50%);
 
   cursor: pointer;
+
   text-decoration: none;
 
-  transition: background-color 0.15s, color 0.15s;
+  transition:
+    background-color 0.15s,
+    color 0.15s;
+
   line-height: 1.2;
+
+  /* 地図画像より手前に表示 */
+  z-index: 2;
 }
 
-/* マウスを重ねたとき */
+
+/* ========================================
+   ボタン操作時
+======================================== */
+
 .region-btn:hover,
 .region-btn:focus-visible {
   background-color: #A52035;
   color: #ffffff;
 }
 
-/* 押したとき */
 .region-btn:active {
   opacity: 0.85;
 }
@@ -142,9 +185,10 @@ body {
   left: 12%;
 }
 
+
 /* ========================================
-   北海道・東北
-   各都道県ボタンの位置
+   hokkaido_tohoku.html
+   都道県ボタンの位置
 ======================================== */
 
 /* 北海道 */
@@ -189,6 +233,16 @@ body {
   left: 35%;
 }
 
+
+/* ========================================
+   アニメーション中の操作制御
+======================================== */
+
+.is-animating .region-btn {
+  pointer-events: none;
+}
+
+
 /* ========================================
    スマートフォン対応
 ======================================== */
@@ -212,8 +266,11 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
   min-height: 100vh;
+
   gap: 32px;
+
   padding: 24px;
 }
 
@@ -231,6 +288,7 @@ body {
 
   background-color: #ffffff;
   color: #A52035;
+
   border: 2px solid #A52035;
   border-radius: 24px;
 
@@ -240,11 +298,28 @@ body {
   padding: 12px 32px;
 
   text-decoration: none;
-  transition: background-color 0.15s, color 0.15s;
+
+  transition:
+    background-color 0.15s,
+    color 0.15s;
 }
 
 .back-btn:hover,
 .back-btn:focus-visible {
   background-color: #A52035;
   color: #ffffff;
+}
+
+
+/* ========================================
+   アクセシビリティ
+======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .region-btn,
+  .back-btn {
+    transition: none;
+  }
+
 }
