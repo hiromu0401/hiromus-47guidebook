@@ -12,13 +12,29 @@
 <body class="page-hokkaido">
   <div class="page-wrapper">
     <main class="content-box hokkaido-content">
-      <!-- 北海道ロゴ -->
-      <div class="prefecture-logo">
-        <img src="./images/北海道ロゴ.png" alt="北海道のロゴ">
+
+      <!-- 自然タイプアイコン -->
+      <img
+        src="./images/自然タイプアイコン.png"
+        alt="自然タイプ"
+        class="spot-type-icon"
+      >
+
+      <!-- 北海道のおすすめスポット -->
+      <div class="prefecture-heading">
+        <p>✦北海道のおすすめスポット✦</p>
       </div>
 
       <!-- 観光スポット名 -->
       <h1 class="spot-title">知床</h1>
+
+      <!-- タイトル下のおすすめ度 -->
+      <div class="spot-title-rating">
+        <img
+          src="./images/星4.5_タイトル.png"
+          alt="おすすめ度4.5"
+        >
+      </div>
 
       <!-- 観光スポット画像＋キャラクター -->
       <div class="spot-image">
@@ -37,11 +53,13 @@
       <!-- 観光スポット説明 -->
       <div class="spot-description">
         <!-- キャッチコピー -->
-        <h2 class="spot-catchcopy">水平線まで続く流氷の世界へ、世界自然遺産・知床</h2>
+        <h2 class="spot-catchcopy">
+          水平線まで続く流氷の世界へ、世界自然遺産・知床
+        </h2>
 
         <!-- 説明本文 -->
         <p>
-          北海道の北東に突き出すように延びる知床半島。名前の由来はアイヌ語で「地の果て」を意味する「シリエトク」と言われている。<br>
+          北海道の北東に突き出すように延びる知床半島。<br>
           ここは世界で最も低緯度に位置する流氷の到達地として知られており、冬期には流れ着いた流氷の上を専用のドライスーツを着て歩く「流氷ウォーク」を体験できる。知床の流氷は、ロシアのアムール川の水が凍って出来た氷であるため、ごく稀にロシアから乗ってきた野生のアザラシが運ばれてくることもあるそう。<br>
           知床は流氷が育む豊かな海洋生態系と原始性の高い陸息生態系の相互関係が評価され、2005年に世界自然遺産に登録されている。しかし近年は、地球温暖化の影響によって流氷が減少傾向にあり、豊かな生態系を取り巻く環境も変化しつつある。雄大な自然が織りなす知床ならではの絶景に興味があるならば、ぜひ早いうちに。
         </p>
@@ -66,15 +84,32 @@
         ></iframe>
       </div>
 
+      <!-- Googleマップ下の区切り線 -->
+      <div class="spot-divider"></div>
+
+      <!-- おすすめ度 -->
+      <div class="spot-rating">
+        <p class="spot-rating-label">おすすめ度</p>
+        <img
+          src="./images/星4.5_本文.png"
+          alt="おすすめ度4.5"
+          class="spot-rating-image"
+        >
+      </div>
+
       <!-- 北海道・東北ページに戻る -->
       <div class="page-back-area">
-        <a href="./hokkaido_tohoku.html" class="back-btn" data-fade-link>北海道・東北ページに戻る</a>
+        <a href="./hokkaido_tohoku.html" class="back-btn" data-fade-link>
+          北海道・東北ページに戻る
+        </a>
       </div>
+
     </main>
   </div>
 
   <!-- GSAPライブラリ -->
   <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+
   <!-- 自作JavaScript -->
   <script src="./script.js"></script>
 </body>
