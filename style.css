@@ -244,7 +244,7 @@ body {
 .spot-image {
   position: relative;
   width: 100%;
-  margin-bottom: 16px;
+  margin-bottom: 4px;
   overflow: visible;
 }
 
@@ -281,7 +281,7 @@ body {
 
 /* 観光スポット説明 */
 .spot-description {
-  padding: 12px 0;
+  padding: 4px 0 12px;
   text-align: left;
   overflow-wrap: anywhere;
 }
@@ -416,7 +416,7 @@ body {
   }
 
   .spot-image {
-    margin-bottom: 12px;
+    margin-bottom: 4px;
   }
 
   .spot-address {
