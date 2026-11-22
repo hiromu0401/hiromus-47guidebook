@@ -255,7 +255,7 @@ body {
 /* 観光スポットのキャッチコピー */
 .spot-catchcopy {
   font-family: 'Zen Maru Gothic', sans-serif;
-  font-size: clamp(16px, 4.5vw, 24px);
+  font-size: clamp(14px, 4.5vw, 16px);
   font-weight: 700;
   color: #A52035;
   line-height: 1.5;
