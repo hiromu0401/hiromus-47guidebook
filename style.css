@@ -201,17 +201,42 @@ body {
   margin-bottom: 12px;
 }
 
-/* 観光スポット画像 */
+/* ========================================
+   観光スポット画像＋キャラクター
+======================================== */
+
+/* 画像②の表示領域 */
 .spot-image {
+  position: relative;
   width: 100%;
   margin-bottom: 16px;
+  overflow: visible;
 }
 
-.spot-image img {
+/* 画像②（観光スポット画像） */
+.spot-photo {
   display: block;
   width: 100%;
   height: auto;
-  object-fit: cover;
+}
+
+/* キャラクターイラスト */
+.spot-character {
+  position: absolute;
+
+  /* 配置位置 */
+  right: -1%;
+  bottom: -3%;
+
+  /* イラストの大きさ */
+  width: 20%;
+  height: auto;
+
+  /* 画像②より手前に表示 */
+  z-index: 2;
+
+  /* イラストがタップ操作を妨げないようにする */
+  pointer-events: none;
 }
 
 /* 住所と本文の共通文字サイズ */
