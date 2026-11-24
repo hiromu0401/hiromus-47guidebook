@@ -194,6 +194,23 @@ body {
 }
 
 /* ========================================
+   地方ページの見出し
+======================================== */
+.region-heading {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.region-heading p {
+  font-family: 'Zen Maru Gothic', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #222222;
+  line-height: 1.3;
+}
+
+/* ========================================
    自然タイプアイコン
    観光スポット画像を基準に配置
 ======================================== */
