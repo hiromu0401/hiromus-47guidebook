@@ -1,4 +1,9 @@
 /* ========================================
+   Google Fonts
+======================================== */
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700&display=swap');
+
+/* ========================================
    共通設定
 ======================================== */
 *, *::before, *::after {
@@ -9,7 +14,7 @@
 
 body {
   background-color: #A52035;
-  font-family: 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'Noto Sans JP', sans-serif;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -167,7 +172,7 @@ body {
 
 /* 都道府県紹介ページ専用フォント */
 .page-kenmei {
-  font-family: 'Zen Maru Gothic', sans-serif;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
 /* 都道府県紹介ページの白枠 */
@@ -186,7 +191,7 @@ body {
 }
 
 .prefecture-heading p {
-  font-family: 'Zen Maru Gothic', sans-serif;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
   font-size: clamp(14px, 3.8vw, 20px);
   font-weight: 700;
   color: #222222;
@@ -203,7 +208,7 @@ body {
 }
 
 .region-heading p {
-  font-family: 'Zen Maru Gothic', sans-serif;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
   font-size: 16px;
   font-weight: 700;
   color: #222222;
@@ -291,6 +296,7 @@ body {
 /* 住所と本文の共通文字サイズ */
 .spot-address,
 .spot-description {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
   font-size: clamp(14px, 3.8vw, 20px);
   font-weight: 400;
   line-height: 1.5;
@@ -299,7 +305,7 @@ body {
 
 /* 観光スポット説明 */
 .spot-description {
-  padding: 4px 0 12px;
+  padding: 4px 2px 12px;
   text-align: left;
   overflow-wrap: anywhere;
 }
@@ -308,7 +314,7 @@ body {
    観光スポットのキャッチコピー
 ======================================== */
 .spot-catchcopy {
-  font-family: 'Zen Maru Gothic', sans-serif;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
   font-size: 1.1em;
   font-weight: 700;
   color: #A52035;
@@ -362,7 +368,7 @@ body {
 
 /* おすすめ度の文字 */
 .spot-rating-label {
-  font-family: 'Zen Maru Gothic', sans-serif;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
   font-size: clamp(14px, 3.8vw, 20px);
   font-weight: 700;
   color: #A52035;
