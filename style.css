@@ -99,33 +99,33 @@ body {
    index.html 地方ボタンの位置
 ======================================== */
 .btn-hokkaido-tohoku {
-  top: 45%;
+  top: 40%;
   left: 83%;
 }
 
 .btn-kanto {
-  top: 77%;
+  top: 75%;
   left: 83%;
 }
 
 .btn-chubu {
-  top: 75%;
-  left: 64%;
+  top: 70%;
+  left: 65%;
 }
 
 .btn-kinki {
-  top: 85%;
+  top: 80%;
   left: 45%;
 }
 
 .btn-chugoku-shikoku {
-  top: 67%;
+  top: 70%;
   left: 28%;
 }
 
 .btn-kyushu {
-  top: 85%;
-  left: 10%;
+  top: 80%;
+  left: 12%;
 }
 
 /* ========================================
@@ -169,13 +169,10 @@ body {
 /* ========================================
    都道府県紹介ページ共通
 ======================================== */
-
-/* 都道府県紹介ページ専用フォント */
 .page-kenmei {
   font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
-/* 都道府県紹介ページの白枠 */
 .kenmei-content {
   position: relative;
   padding: 16px;
@@ -216,8 +213,7 @@ body {
 }
 
 /* ========================================
-   自然タイプアイコン
-   観光スポット画像を基準に配置
+   観光タイプアイコン
 ======================================== */
 .spot-type-icon {
   position: absolute;
@@ -262,8 +258,6 @@ body {
 /* ========================================
    観光スポット画像＋キャラクター
 ======================================== */
-
-/* 観光スポット画像の表示領域 */
 .spot-image {
   position: relative;
   width: 100%;
@@ -271,14 +265,12 @@ body {
   overflow: visible;
 }
 
-/* 観光スポット画像 */
 .spot-photo {
   display: block;
   width: 100%;
   height: auto;
 }
 
-/* キャラクターイラスト */
 .spot-character {
   position: absolute;
   right: -5%;
@@ -292,8 +284,6 @@ body {
 /* ========================================
    住所・説明本文
 ======================================== */
-
-/* 住所と本文の共通文字サイズ */
 .spot-address,
 .spot-description {
   font-family: 'M PLUS Rounded 1c', sans-serif;
@@ -303,7 +293,6 @@ body {
   color: #222222;
 }
 
-/* 観光スポット説明 */
 .spot-description {
   padding: 4px 2px 12px;
   text-align: left;
@@ -359,11 +348,29 @@ body {
 }
 
 /* ========================================
-   おすすめ度
+   おすすめ度＋全国ランキング
 ======================================== */
+
+/* 左右50%ずつの2カラム */
 .spot-rating {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   width: 100%;
+  align-items: start;
   text-align: center;
+  gap: 0;
+}
+
+/* ========================================
+   左側：おすすめ度
+======================================== */
+.rating-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-width: 0;
+  padding: 8px 4px;
 }
 
 /* おすすめ度の文字 */
@@ -372,16 +379,76 @@ body {
   font-size: clamp(14px, 3.8vw, 20px);
   font-weight: 700;
   color: #A52035;
+  line-height: 1.4;
   margin-bottom: 8px;
 }
 
 /* おすすめ度の星画像 */
 .spot-rating-image {
   display: block;
-  width: 40%;
+  width: 65%;
   max-width: 200px;
   height: auto;
   margin: 0 auto;
+}
+
+/* ========================================
+   右側：全国ランキング
+======================================== */
+.rating-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-width: 0;
+  padding: 8px 4px;
+  border-left: 1px solid #E5D5D8;
+}
+
+/* 全国ランキングの文字 */
+.ranking-label {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size: clamp(14px, 3.8vw, 20px);
+  font-weight: 700;
+  color: #A52035;
+  line-height: 1.4;
+  white-space: nowrap;
+  margin-bottom: 8px;
+}
+
+/* 順位と/47の横並び */
+.ranking-number {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 4px;
+  line-height: 1.1;
+  white-space: nowrap;
+}
+
+/* 順位の数字：見出しより2px大きい */
+.rank-main {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size: clamp(16px, calc(3.8vw + 2px), 22px);
+  font-weight: 700;
+  color: #A52035;
+  line-height: 1.1;
+  font-variant-numeric: tabular-nums;
+}
+
+/* /47：サイズは維持し、臙脂色に統一 */
+.rank-total {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size: clamp(12px, 3.5vw, 18px);
+  font-weight: 500;
+  color: #A52035;
+  line-height: 1.2;
+}
+
+/* 評価未設定時は星画像を非表示 */
+.spot-title-rating img[hidden],
+.spot-rating-image[hidden] {
+  display: none;
 }
 
 /* ========================================
@@ -445,6 +512,10 @@ body {
 
   .spot-address {
     padding: 8px 4px;
+  }
+
+  .ranking-number {
+    gap: 2px;
   }
 }
 
