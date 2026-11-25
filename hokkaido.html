@@ -6,12 +6,12 @@
   <title>北海道 | 47都道府県ガイド</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
 </head>
-<body class="page-kenmei">
+<body class="page-kenmei" data-prefecture="hokkaido">
   <div class="page-wrapper">
     <main class="content-box kenmei-content">
+
       <!-- 都道府県のおすすめスポット -->
       <div class="prefecture-heading">
         <p>✦北海道のおすすめスポット✦</p>
@@ -23,28 +23,24 @@
       <!-- タイトル下のおすすめ度 -->
       <div class="spot-title-rating">
         <img
+          id="title-star-image"
           src="./images/星4.5_タイトル.png"
           alt="おすすめ度4.5"
         >
       </div>
 
-      <!-- 観光スポット画像＋キャラクター＋自然タイプアイコン -->
+      <!-- 観光スポット画像＋キャラクター＋タイプアイコン -->
       <div class="spot-image">
-        <!-- 観光スポット画像 -->
         <img
           src="./images/北海道.png"
           alt="北海道・知床の風景"
           class="spot-photo"
         >
-
-        <!-- キャラクターイラスト -->
         <img
           src="./images/フライトキャップむう.png"
           alt="むう"
           class="spot-character"
         >
-
-        <!-- 自然タイプアイコン -->
         <img
           src="./images/自然タイプアイコン.png"
           alt="自然タイプ"
@@ -54,14 +50,11 @@
 
       <!-- 観光スポット説明 -->
       <div class="spot-description">
-        <!-- キャッチコピー -->
         <h2 class="spot-catchcopy">
-          水平線まで続く流氷の世界 世界遺産・知床
+          水平線まで続く流氷の世界、世界遺産・知床
         </h2>
-
-        <!-- 説明本文 -->
         <p>
-          北海道の北東に突き出して延びる知床半島。<br>
+          北海道の北東に突き出すように延びる知床半島。<br>
           ここは世界で最も低緯度に位置する流氷の到達地として知られており、冬期には流れ着いた流氷の上を専用のドライスーツを着て歩く「流氷ウォーク」を体験できる。知床の流氷は、ロシアのアムール川の水が凍って出来た氷であるため、ごく稀にロシアから乗ってきた野生のアザラシが運ばれてくることもあるそう。<br>
           知床は流氷が育む豊かな海洋生態系と原始性の高い陸息生態系の相互関係が評価され、2005年に世界自然遺産に登録されている。しかし近年は、地球温暖化の影響によって流氷が減少傾向にあり、豊かな生態系を取り巻く環境も変化しつつある。雄大な自然が織りなす知床ならではの絶景に興味があるならば、ぜひ早いうちに。
         </p>
@@ -74,27 +67,49 @@
 
       <!-- Googleマップ -->
       <div class="spot-map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2410.607543342522!2d144.99187511454778!3d44.068662714264754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f6cc39275e13933%3A0x657d197d6ecd4e2b!2z55-l5bqK5LiW55WM6YG655Sj44K744Oz44K_44O8!5e0!3m2!1sja!2sjp!4v1795530995586!5m2!1sja!2sjp" 
-          width="600" 
-          height="450" 
-          style="border:0;" 
-          allowfullscreen="" 
-          loading="lazy" 
-          referrerpolicy="strict-origin-when-cross-origin">
-        </iframe>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d179.16933365332181!2d144.99043305807103!3d44.06871027636012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sja!2sjp!4v1795354342161!5m2!1sja!2sjp"
+          width="600"
+          height="450"
+          style="border:0;"
+          allowfullscreen
+          loading="lazy"
+          referrerpolicy="strict-origin-when-cross-origin"
+          title="北海道斜里町ウトロ西186番地8の地図"
+        ></iframe>
       </div>
 
       <!-- Googleマップ下の区切り線 -->
       <div class="spot-divider"></div>
 
-      <!-- おすすめ度 -->
+      <!-- おすすめ度＋全国ランキング -->
       <div class="spot-rating">
-        <p class="spot-rating-label">おすすめ度</p>
-        <img
-          src="./images/星4.5_本文.png"
-          alt="おすすめ度4.5"
-          class="spot-rating-image"
-        >
+
+        <!-- 左側：おすすめ度 -->
+        <div class="rating-left">
+          <p class="spot-rating-label">おすすめ度</p>
+          <img
+            id="body-star-image"
+            src="./images/星4.5_本文.png"
+            alt="おすすめ度4.5"
+            class="spot-rating-image"
+          >
+        </div>
+
+        <!-- 右側：全国ランキング -->
+        <div class="rating-right">
+          <p class="ranking-label">全国ランキング</p>
+
+          <div class="ranking-number">
+            <span id="rank-number" class="rank-main">—</span>
+            <span class="rank-total">/47</span>
+          </div>
+
+          <p id="rank-status" class="ranking-status">
+            集計中
+          </p>
+        </div>
+
       </div>
 
       <!-- 地方ページに戻る -->
@@ -103,12 +118,21 @@
           北海道・東北ページに戻る
         </a>
       </div>
+
     </main>
   </div>
 
   <!-- GSAPライブラリ -->
   <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
-  <!-- 自作JavaScript -->
+
+  <!-- 既存のフェードアニメーション -->
   <script src="./script.js"></script>
+
+  <!-- 47都道府県評価データ -->
+  <script src="./ratings.js"></script>
+
+  <!-- ランキング自動計算 -->
+  <script src="./ranking.js"></script>
+
 </body>
 </html>
