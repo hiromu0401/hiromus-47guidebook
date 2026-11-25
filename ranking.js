@@ -100,7 +100,7 @@
   ======================================== */
 
   if (rankNumberElement) {
-    rankNumberElement.textContent = rank;
+    rankNumberElement.textContent = `${rank}位`;
   }
 
   /* ========================================
