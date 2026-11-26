@@ -217,10 +217,17 @@ body {
 ======================================== */
 .spot-type-icon {
   position: absolute;
-  top: -80px;
+
+  /* 写真上端から70px上に配置 */
+  top: -70px;
+
+  /* 写真の右端に揃える */
   right: 0;
-  width: 50px;
+
+  /* 50pxから1.1倍に拡大 */
+  width: 55px;
   height: auto;
+
   z-index: 3;
   pointer-events: none;
 }
@@ -436,7 +443,7 @@ body {
   font-variant-numeric: tabular-nums;
 }
 
-/* /47：サイズは維持し、臙脂色に統一 */
+/* /47：臙脂色 */
 .rank-total {
   font-family: 'M PLUS Rounded 1c', sans-serif;
   font-size: clamp(12px, 3.5vw, 18px);
