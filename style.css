@@ -99,33 +99,33 @@ body {
    index.html 地方ボタンの位置
 ======================================== */
 .btn-hokkaido-tohoku {
-  top: 40%;
-  left: 83%;
+  top: 43%;
+  left: 84%;
 }
 
 .btn-kanto {
-  top: 75%;
+  top: 76%;
   left: 83%;
 }
 
 .btn-chubu {
-  top: 70%;
-  left: 65%;
+  top: 73%;
+  left: 63%;
 }
 
 .btn-kinki {
-  top: 80%;
+  top: 85%;
   left: 45%;
 }
 
 .btn-chugoku-shikoku {
-  top: 70%;
-  left: 28%;
+  top: 65%;
+  left: 26%;
 }
 
 .btn-kyushu {
-  top: 80%;
-  left: 12%;
+  top: 85%;
+  left: 9%;
 }
 
 /* ========================================
