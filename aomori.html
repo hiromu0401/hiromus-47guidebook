@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>青森県 | 47都道府県ガイド</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body class="page-kenmei" data-prefecture="aomori">
+  <div class="page-wrapper">
+    <main class="content-box kenmei-content">
+
+      <!-- 都道府県のおすすめスポット -->
+      <div class="prefecture-heading">
+        <p>✦青森県のおすすめスポット✦</p>
+      </div>
+
+      <!-- 観光スポット名 -->
+      <h1 class="spot-title">不老ふ死温泉</h1>
+
+      <!-- タイトル下のおすすめ度 -->
+      <div class="spot-title-rating">
+        <img
+          id="title-star-image"
+          src="./images/星4_タイトル.png"
+          alt="おすすめ度4"
+        >
+      </div>
+
+      <!-- 観光スポット画像＋キャラクター＋タイプアイコン -->
+      <div class="spot-image">
+
+        <!-- 観光スポット画像 -->
+        <img
+          src="./images/青森.png"
+          alt="青森県・不老ふ死温泉の風景"
+          class="spot-photo"
+        >
+
+        <!-- キャラクターイラスト -->
+        <img
+          src="./images/フライトキャップむう.png"
+          alt="むう"
+          class="spot-character"
+        >
+
+        <!-- 自然タイプアイコン -->
+        <img
+          src="./images/温泉タイプアイコン.png"
+          alt="温泉タイプ"
+          class="spot-type-icon"
+        >
+      </div>
+
+      <!-- 観光スポット説明 -->
+      <div class="spot-description">
+
+        <!-- キャッチコピー -->
+        <h2 class="spot-catchcopy">
+          日本海に沈む夕陽を一望できる海岸と一体化した露天風呂
+        </h2>
+
+        <!-- 説明本文 -->
+        <p>
+          青森の日本海側に位置する黄金崎不老ふ死温泉の露天風呂は、荒々しい岩礁と一体化した名湯。<br>
+          夕暮れ時には、日本海に沈む夕陽が空と海、さらに温泉を囲う岩肌までも黄金色に染め上げ、その絶景は「日本の夕陽百景」にも選ばれている。
+          また、露天風呂は混浴(湯あみ着用可)と女性専用の2種類のみであり、今では珍しい東北特有の混浴体験も、旅の忘れられない思い出になるだろう。
+        </p>
+      </div>
+
+      <!-- 住所 -->
+      <div class="spot-address">
+        <p>青森県西津軽郡深浦町舮作下清滝15</p>
+      </div>
+
+      <!-- Googleマップ -->
+      <div class="spot-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3028.7053069646845!2d139.86169168976247!3d40.61432510893125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f9a43640e760929%3A0x13d88c3e683369d!2z6buE6YeR5bSO5LiN6ICB44G15q275rip5rOJ!5e0!3m2!1sja!2sjp!4v1795668442894!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      </div>
+
+      <!-- Googleマップ下の区切り線 -->
+      <div class="spot-divider"></div>
+
+      <!-- おすすめ度＋全国ランキング -->
+      <div class="spot-rating">
+
+        <!-- 左側：おすすめ度 -->
+        <div class="rating-left">
+          <p class="spot-rating-label">おすすめ度</p>
+          <img
+            id="body-star-image"
+            src="./images/星4_本文.png"
+            alt="おすすめ度4"
+            class="spot-rating-image"
+          >
+        </div>
+
+        <!-- 右側：全国ランキング -->
+        <div class="rating-right">
+          <p class="ranking-label">全国ランキング</p>
+          <div class="ranking-number">
+            <span id="rank-number" class="rank-main">—</span>
+            <span class="rank-total">/47</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- 地方ページに戻る -->
+      <div class="page-back-area">
+        <a href="./hokkaido_tohoku.html" class="back-btn" data-fade-link>
+          北海道・東北ページに戻る
+        </a>
+      </div>
+
+    </main>
+  </div>
+
+  <!-- GSAPライブラリ -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+
+  <!-- 既存のフェードアニメーション -->
+  <script src="./script.js"></script>
+
+  <!-- 星評価の自動取得 -->
+  <script src="./ratings.js"></script>
+
+  <!-- 全国ランキング自動計算 -->
+  <script src="./ranking.js"></script>
+
+</body>
+</html>
